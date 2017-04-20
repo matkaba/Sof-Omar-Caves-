@@ -1,0 +1,266 @@
+/* Base Styles -------------------- */
+
+/* Otional google Font Family ---
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Trirong', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Taviraj', serif;
+
+*/ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.youtubevid{
+width: 100%;
+margin: 0px auto;
+border-radius: 10px;
+border-top: 10px solid orange;
+border-bottom: 10px solid #56E161; 
+border-right: 10px solid #EED324; 
+border-left: 10px solid #4018F4;/*
+  padding: 18% 24%;
+  border-top: 10px solid #ffa949;
+  margin: 105px 0 60px;
+  box-shadow:15px 15px  10px -5px gray ;
+  
+  border-radius: 50px 10px 50px 10px; /* or 50px 10px;*/}
+*/
+}
+
+h2 {
+  font-size: 3.3125em; /* 53px/16px  */
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0 0 .5em; /* 0 0 26px */
+  
+
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+ul, ol {
+	margin: 30px 0px;
+
+}
+li{
+margin-bottom: 10px;	
+}
+
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+a:active {
+  color: lightcoral;
+}
+
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 170px;
+  height: 850px;
+
+  background: linear-gradient(#ffa949, transparent 90px),
+			 linear-gradient(0deg, #fff, transparent),
+			#ffa949 url('') no-repeat center;
+  background-size: cover%;
+  
+  /*background-image: linear-gradient (#ffa949,firebrick);*/
+}
+
+.title {
+ 
+  font-size: 3rem; /* 26px/16px */
+  color: white;
+  text-shadow:0 5px 5px #cc0;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+  font-family: 'Libre Franklin', sans-serif;
+
+  
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;  
+  letter-spacing: 0.065em;
+  font-weight: 200;
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content {
+	padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+}
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #ffa949;
+}
+
+.t-border {
+  border-top: 2px solid #dfe2e6;
+}
+
+/* Layout Styles ------------------ */
+
+.primary-content, 
+.secondary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.wildlife {
+  color: white;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid #ffa949;
+  margin: 105px 0 60px;
+  background: #434a52 url('Sof Omar Caves1.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow:15px 15px  10px -5px gray ;
+  
+  border-radius: 50px 10px 50px 10px; /* or 50px 10px;*/
+
+}
+
+.arrow {
+  width: 50px;
+  margin-top: 150px;
+}
+
+/* Floated Columns ------------------ */
+
+.resorts,
+.tips {
+  width: 46.5%;
+}
+
+.tips {
+  float: left;
+}
+
+.resorts {
+  float: right;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Media Queries ------------------ */
+
+@media(max-width: 1024px){
+	.primary-content, .secondary-content{
+		width: 90%;
+	
+	}
+	.wildlife{
+		padding: 10% 12%;
+		margin:  50px 0 20px;
+	}
+}
+@media(max-width: 768px){
+	.primary-content, .secondary-content{
+		width: 90%;
+		padding: 20px;
+		border-top: none;
+	}
+	.main-header{
+		max-height: 380px;
+		padding: 50px 25px 0;
+		
+	}
+	.title{
+		font-size: 2.3em;
+		border: none;
+	}
+	h1{
+		font-size: 2.5rem;
+		font-height: 1.1;
+    color: #1AC8F1;
+	}
+	.arrow{
+		display: none;
+	}
+	.intro{
+		font-size: 1rem;
+	}
+	.resorts, .tips{
+		float: none;
+		width: 100%;
+	}
+	.main-footer{
+		padding: 20px 0;
+		
+	}
+}
+
+@media(max-width: 600px){
+  h1{
+      font-size: 1.5rem;
+  }
+  .title{
+          font-size: 1.4rem;
+
+  }
+  }
